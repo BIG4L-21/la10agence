@@ -1,0 +1,20 @@
+# robots.txt — La 10 Agence
+# https://la10agence-1nrn.vercel.app
+
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /projets.html
+Allow: /blog.html
+
+Disallow: /admin.html
+Disallow: /api/
+Disallow: /*.json$
+
+Sitemap: https://la10agence-1nrn.vercel.app/sitemap.xml
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
