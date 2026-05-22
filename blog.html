@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr" itemscope itemtype="https://schema.org/Blog">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Marketing Digital & Communication | La 10 Agence — Paris</title>
+  <meta name="description" content="Conseils en branding, marketing digital, social media et communication pour TPE et PME. Articles d'experts de La 10 Agence Paris."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://la10agence-1nrn.vercel.app/blog.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://la10agence-1nrn.vercel.app/blog.html"/>
+  <meta property="og:title" content="Blog Marketing Digital & Communication — La 10 Agence Paris"/>
+  <meta property="og:description" content="Conseils en branding, marketing digital et communication pour PME parisiennes."/>
+  <meta property="og:image" content="https://la10agence-1nrn.vercel.app/og-image.jpg"/>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"Blog La 10 Agence","url":"https://la10agence-1nrn.vercel.app/blog.html","publisher":{"@type":"Organization","name":"La 10 Agence","logo":"https://la10agence-1nrn.vercel.app/logo.png"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://la10agence-1nrn.vercel.app/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://la10agence-1nrn.vercel.app/blog.html"}]}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="/logo.png"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPRE264HYK"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GPRE264HYK');</script>
+  <style>
+    :root{
+      --green:#7fff00; --black:#0a0a0a; --black-2:#111;
+      --white:#f5f5f0; --gray:#666; --gray-lt:#999;
+      --border:rgba(255,255,255,0.07);
+      --ff-display:'Bebas Neue',sans-serif;
+      --ff-heading:'Syne',sans-serif;
+      --ff-body:'DM Sans',sans-serif;
+      --radius:14px;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{background:var(--black);color:var(--white);font-family:var(--ff-body);line-height:1.7;}
+    a{text-decoration:none;color:inherit;}
+    img{display:block;max-width:100%;}
+
+    /* ── Skip nav ── */
+    .skip-nav{position:absolute;top:-40px;left:0;background:var(--green);color:var(--black);padding:8px 16px;font-weight:700;z-index:9999;transition:top .2s;border-radius:0 0 8px 0}
+    .skip-nav:focus{top:0}
+
+    /* ── Navbar ── */
+    nav{
+      position:fixed;top:0;left:0;right:0;z-index:100;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:1rem 2.5rem;
+      background:rgba(10,10,10,0.92);
+      backdrop-filter:blur(20px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav-logo img{height:46px;filter:brightness(0) saturate(100%) invert(87%) sepia(48%) saturate(800%) hue-rotate(50deg) brightness(120%);}
+    .nav-links{display:flex;gap:0.2rem;list-style:none;}
+    .nav-links a{
+      font-family:var(--ff-heading);font-size:0.82rem;font-weight:600;
+      color:rgba(255,255,255,0.5);padding:0.4rem 0.75rem;border-radius:8px;
+      transition:color .2s,background .2s;
+    }
+    .nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.05);}
+    .nav-links a.active{color:var(--green);}
+    .nav-cta{
+      background:var(--green);color:var(--black);
+      padding:0.55rem 1.2rem;border-radius:50px;
+      font-family:var(--ff-heading);font-weight:700;font-size:0.82rem;
+      transition:transform .2s,box-shadow .2s;
+    }
+    .nav-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(127,255,0,.3);}
+    @media(max-width:768px){nav{padding:1rem 1.25rem;}.nav-links{display:none;}}
+
+    /* ── Breadcrumb ── */
+    .breadcrumb{
+      max-width:1200px;margin:0 auto;
+      padding:5.5rem 2.5rem 0;
+      display:flex;gap:.5rem;font-size:.78rem;color:var(--gray);
+    }
+    .breadcrumb a{color:var(--gray-lt);transition:color .2s;}
+    .breadcrumb a:hover{color:var(--green);}
+    @media(max-width:768px){.breadcrumb{padding:5.5rem 1.25rem 0;}}
+
+    /* ── Hero ── */
+    .blog-hero{
+      max-width:1200px;margin:0 auto;
+      padding:2rem 2.5rem 3rem;
+      display:flex;align-items:flex-end;justify-content:space-between;
+      gap:2rem;flex-wrap:wrap;
+      border-bottom:1px solid var(--border);
+    }
+    .blog-hero-text{}
+    .blog-label{
+      display:inline-flex;align-items:center;gap:.5rem;
+      background:rgba(127,255,0,.08);border:1px solid rgba(127,255,0,.15);
+      color:var(--green);font-size:.72rem;font-weight:700;
+      letter-spacing:.1em;text-transform:uppercase;
+      padding:.3rem .9rem;border-radius:4px;margin-bottom:1.25rem;
+    }
+    .blog-hero h1{
+      font-family:var(--ff-heading);
+      font-size:clamp(2.2rem,5vw,4rem);
+      font-weight:800;line-height:1.1;
+    }
+    .blog-hero h1 em{color:var(--green);font-style:normal;}
+    .blog-hero-meta{
+      display:flex;gap:2rem;flex-wrap:wrap;
+    }
+    .blog-hero-stat{text-align:center;}
+    .blog-hero-stat strong{
+      display:block;
+      font-family:var(--ff-heading);font-size:2rem;font-weight:800;
+      color:var(--green);
+    }
+    .blog-hero-stat span{font-size:.78rem;color:var(--gray);}
+    @media(max-width:768px){.blog-hero{padding:2rem 1.25rem 2.5rem;}}
+
+    /* ── Filters ── */
+    .blog-filters{
+      max-width:1200px;margin:0 auto;
+      padding:2rem 2.5rem 1rem;
+      display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;
+    }
+    .filter-label{font-size:.72rem;color:var(--gray);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-right:.5rem;}
+    .filter-btn{
+      background:transparent;border:1px solid var(--border);
+      color:var(--gray-lt);padding:.4rem 1rem;border-radius:50px;
+      font-family:var(--ff-heading);font-size:.78rem;font-weight:600;
+      cursor:pointer;transition:all .2s;
+    }
+    .filter-btn.active,.filter-btn:hover{
+      background:rgba(127,255,0,.08);
+      border-color:rgba(127,255,0,.3);
+      color:var(--green);
+    }
+    @media(max-width:768px){.blog-filters{padding:1.5rem 1.25rem 0.5rem;}}
+
+    /* ── Grid ── */
+    .blog-grid{
+      max-width:1200px;margin:0 auto;
+      padding:1.5rem 2.5rem 6rem;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.5rem;
+    }
+    @media(max-width:1024px){.blog-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:640px){.blog-grid{grid-template-columns:1fr;padding:1.5rem 1.25rem 4rem;}}
+
+    /* ── Featured card (full width) ── */
+    .article-featured{
+      grid-column:1/-1;
+      display:grid;
+      grid-template-columns:1.1fr 1fr;
+      border-radius:20px;overflow:hidden;
+      border:1px solid var(--border);
+      background:var(--black-2);
+      transition:border-color .3s,box-shadow .3s;
+    }
+    .article-featured:hover{
+      border-color:rgba(127,255,0,.2);
+      box-shadow:0 20px 60px rgba(0,0,0,.5);
+    }
+    .featured-img{
+      position:relative;overflow:hidden;
+      background:linear-gradient(135deg,#0d1f0d,#1a3a0d);
+      min-height:320px;
+    }
+    .featured-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+    .article-featured:hover .featured-img img{transform:scale(1.04);}
+    .featured-badge{
+      position:absolute;top:1rem;left:1rem;
+      background:var(--green);color:var(--black);
+      font-family:var(--ff-heading);font-size:.65rem;font-weight:700;
+      letter-spacing:.1em;text-transform:uppercase;
+      padding:.3rem .8rem;border-radius:4px;
+    }
+    .featured-body{
+      padding:2.5rem;
+      display:flex;flex-direction:column;justify-content:center;
+    }
+    .featured-cat{
+      font-size:.68rem;font-weight:700;letter-spacing:.12em;
+      text-transform:uppercase;color:var(--green);margin-bottom:.75rem;
+    }
+    .featured-body h2{
+      font-family:var(--ff-heading);
+      font-size:clamp(1.4rem,2.5vw,2rem);
+      font-weight:800;line-height:1.25;margin-bottom:1rem;
+    }
+    .featured-body h2 a:hover{color:var(--green);}
+    .featured-body p{font-size:.92rem;color:var(--gray-lt);line-height:1.75;margin-bottom:1.75rem;flex:1;}
+    .featured-meta{
+      display:flex;align-items:center;justify-content:space-between;
+      padding-top:1.25rem;border-top:1px solid var(--border);
+    }
+    .featured-meta time{font-size:.75rem;color:var(--gray);}
+    .btn-read{
+      display:inline-flex;align-items:center;gap:.5rem;
+      background:var(--green);color:var(--black);
+      padding:.6rem 1.4rem;border-radius:50px;
+      font-family:var(--ff-heading);font-weight:700;font-size:.82rem;
+      transition:transform .2s,box-shadow .2s;
+    }
+    .btn-read:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(127,255,0,.3);}
+    @media(max-width:768px){
+      .article-featured{grid-template-columns:1fr;}
+      .featured-img{min-height:220px;}
+      .featured-body{padding:1.75rem;}
+    }
+
+    /* ── Regular card ── */
+    .article-card{
+      background:var(--black-2);border:1px solid var(--border);
+      border-radius:var(--radius);overflow:hidden;
+      display:flex;flex-direction:column;
+      transition:transform .3s ease,border-color .3s,box-shadow .3s;
+    }
+    .article-card:hover{
+      transform:translateY(-5px);
+      border-color:rgba(127,255,0,.2);
+      box-shadow:0 16px 48px rgba(0,0,0,.4);
+    }
+    .card-img{
+      position:relative;overflow:hidden;
+      background:linear-gradient(135deg,#0d1a0d,#1a2a0d);
+      height:200px;
+    }
+    .card-img img{
+      width:100%;height:100%;object-fit:cover;
+      transition:transform .5s ease;
+    }
+    .article-card:hover .card-img img{transform:scale(1.06);}
+    .card-cat-badge{
+      position:absolute;top:.75rem;left:.75rem;
+      background:rgba(10,10,10,.85);backdrop-filter:blur(8px);
+      border:1px solid rgba(127,255,0,.2);
+      color:var(--green);font-family:var(--ff-heading);
+      font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+      padding:.25rem .7rem;border-radius:4px;
+    }
+    .card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column;}
+    .card-body h2{
+      font-family:var(--ff-heading);font-size:1.05rem;font-weight:800;
+      line-height:1.35;margin-bottom:.65rem;
+    }
+    .card-body h2 a:hover{color:var(--green);}
+    .card-body p{
+      font-size:.845rem;color:var(--gray-lt);line-height:1.7;
+      flex:1;margin-bottom:1.25rem;
+      /* Clamp to 3 lines */
+      display:-webkit-box;-webkit-line-clamp:3;
+      -webkit-box-orient:vertical;overflow:hidden;
+    }
+    .card-footer{
+      display:flex;align-items:center;justify-content:space-between;
+      padding-top:.9rem;border-top:1px solid var(--border);
+    }
+    .card-meta{font-size:.72rem;color:var(--gray);}
+    .card-link{
+      font-family:var(--ff-heading);font-size:.75rem;font-weight:700;
+      color:var(--green);display:flex;align-items:center;gap:.3rem;
+      transition:gap .2s;
+    }
+    .article-card:hover .card-link{gap:.6rem;}
+    .read-time{
+      display:flex;align-items:center;gap:.3rem;
+      font-size:.7rem;color:var(--gray);margin-top:.4rem;
+    }
+
+    /* ── CTA Banner ── */
+    .blog-cta{
+      max-width:1200px;margin:0 auto 6rem;
+      padding:0 2.5rem;
+    }
+    .blog-cta-inner{
+      background:linear-gradient(135deg,rgba(127,255,0,.07),rgba(127,255,0,.02));
+      border:1px solid rgba(127,255,0,.15);
+      border-radius:24px;padding:3rem;
+      display:flex;align-items:center;justify-content:space-between;
+      gap:2rem;flex-wrap:wrap;
+    }
+    .blog-cta h3{font-family:var(--ff-heading);font-size:1.6rem;font-weight:800;margin-bottom:.5rem;}
+    .blog-cta p{color:var(--gray-lt);font-size:.92rem;max-width:500px;}
+    .btn-cta{
+      display:inline-flex;align-items:center;gap:.5rem;
+      background:var(--green);color:var(--black);
+      padding:.85rem 2rem;border-radius:50px;
+      font-family:var(--ff-heading);font-weight:700;font-size:.9rem;
+      white-space:nowrap;
+      transition:transform .2s,box-shadow .2s;
+    }
+    .btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(127,255,0,.3);}
+    @media(max-width:768px){.blog-cta{padding:0 1.25rem;}.blog-cta-inner{padding:2rem;}}
+
+    /* ── Footer ── */
+    footer{
+      border-top:1px solid var(--border);
+      padding:2rem 2.5rem;
+      display:flex;align-items:center;justify-content:space-between;
+      flex-wrap:wrap;gap:1rem;
+    }
+    footer p{font-size:.8rem;color:var(--gray);}
+    .footer-links{display:flex;gap:1.5rem;}
+    .footer-links a{font-size:.8rem;color:var(--gray);transition:color .2s;}
+    .footer-links a:hover{color:var(--green);}
+    @media(max-width:768px){footer{padding:1.5rem 1.25rem;flex-direction:column;align-items:flex-start;}}
+
+    /* ── Hidden ── */
+    .hidden{display:none!important;}
+    .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Aller au contenu principal</a>
+
+  <!-- Nav -->
+  <nav role="navigation" aria-label="Navigation principale">
+    <a href="/" class="nav-logo" aria-label="La 10 Agence — Accueil">
+      <img src="logo.png" alt="La 10 Agence — Agence communication visuelle Paris" height="46"
+           onerror="this.style.display='none'"/>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/projets.html">Projets</a></li>
+      <li><a href="/#equipe">Équipe</a></li>
+      <li><a href="/blog.html" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+    <a href="/#contact" class="nav-cta">Démarrer un projet</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="Fil d'Ariane" class="breadcrumb">
+      <a href="/">Accueil</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Blog</span>
+    </nav>
+
+    <!-- Hero -->
+    <header class="blog-hero">
+      <div class="blog-hero-text">
+        <div class="blog-label">
+          <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="var(--green)"/></svg>
+          Conseils & Expertise
+        </div>
+        <h1>Le blog <em>La 10.</em></h1>
+      </div>
+      <div class="blog-hero-meta">
+        <div class="blog-hero-stat">
+          <strong>3</strong>
+          <span>Articles</span>
+        </div>
+        <div class="blog-hero-stat">
+          <strong>3</strong>
+          <span>Catégories</span>
+        </div>
+        <div class="blog-hero-stat">
+          <strong>~7min</strong>
+          <span>Lecture moy.</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Filters -->
+    <div class="blog-filters" role="group" aria-label="Filtrer par catégorie">
+      <span class="filter-label">Filtrer :</span>
+      <button class="filter-btn active" data-filter="all" onclick="filterBlog(this,'all')">Tous les articles</button>
+      <button class="filter-btn" data-filter="branding" onclick="filterBlog(this,'branding')">Branding</button>
+      <button class="filter-btn" data-filter="marketing" onclick="filterBlog(this,'marketing')">Marketing Digital</button>
+      <button class="filter-btn" data-filter="communication" onclick="filterBlog(this,'communication')">Communication</button>
+    </div>
+
+    <!-- Grid -->
+    <section class="blog-grid" aria-label="Articles de blog">
+
+      <!-- Article featured -->
+      <article class="article-featured" data-cat="branding" itemscope itemtype="https://schema.org/Article">
+        <div class="featured-img">
+          <span class="featured-badge">✦ À la une</span>
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80"
+               alt="Branding et identité visuelle pour PME parisiennes — La 10 Agence"
+               loading="eager" width="600" height="320"
+               onerror="this.style.display='none'"/>
+        </div>
+        <div class="featured-body">
+          <div class="featured-cat">✦ Branding</div>
+          <h2 itemprop="headline">
+            <a href="/blog/pourquoi-branding-essentiel-pme.html">
+              Pourquoi le branding est essentiel pour une PME en 2025
+            </a>
+          </h2>
+          <p itemprop="description">Une identité visuelle forte n'est pas un luxe réservé aux grandes entreprises. Découvrez pourquoi le branding est un levier de croissance incontournable pour les PME parisiennes et comment le construire efficacement avec un budget maîtrisé.</p>
+          <div class="featured-meta">
+            <time datetime="2025-01-15" itemprop="datePublished">15 janvier 2025 · 8 min</time>
+            <a href="/blog/pourquoi-branding-essentiel-pme.html" class="btn-read">
+              Lire l'article →
+            </a>
+          </div>
+        </div>
+        <meta itemprop="author" content="La 10 Agence"/>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="article-card" data-cat="marketing" itemscope itemtype="https://schema.org/Article">
+        <div class="card-img">
+          <span class="card-cat-badge">Marketing Digital</span>
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+               alt="Tendances marketing digital 2025 pour PME — La 10 Agence Paris"
+               loading="lazy" width="400" height="200"
+               onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-body">
+          <h2 itemprop="headline">
+            <a href="/blog/tendances-marketing-digital-2025.html">
+              Les tendances du marketing digital en 2025
+            </a>
+          </h2>
+          <p itemprop="description">IA générative, vidéo courte, personnalisation avancée — découvrez les 7 tendances qui vont transformer le marketing digital des PME en 2025 et comment les adopter concrètement.</p>
+          <div class="card-footer">
+            <div>
+              <div class="card-meta"><time datetime="2025-02-01" itemprop="datePublished">1 février 2025</time></div>
+              <div class="read-time">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                6 min de lecture
+              </div>
+            </div>
+            <a href="/blog/tendances-marketing-digital-2025.html" class="card-link">
+              Lire <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+        <meta itemprop="author" content="La 10 Agence"/>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="article-card" data-cat="communication" itemscope itemtype="https://schema.org/Article">
+        <div class="card-img">
+          <span class="card-cat-badge">Communication</span>
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"
+               alt="Choisir agence communication Paris — La 10 Agence"
+               loading="lazy" width="400" height="200"
+               onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-body">
+          <h2 itemprop="headline">
+            <a href="/blog/choisir-agence-communication-paris.html">
+              Comment choisir son agence de communication à Paris
+            </a>
+          </h2>
+          <p itemprop="description">Budget, expertise, portfolio, références — les 7 critères essentiels pour bien choisir votre agence de communication à Paris et éviter les erreurs coûteuses.</p>
+          <div class="card-footer">
+            <div>
+              <div class="card-meta"><time datetime="2025-03-10" itemprop="datePublished">10 mars 2025</time></div>
+              <div class="read-time">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                7 min de lecture
+              </div>
+            </div>
+            <a href="/blog/choisir-agence-communication-paris.html" class="card-link">
+              Lire <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+        <meta itemprop="author" content="La 10 Agence"/>
+      </article>
+
+    </section>
+
+    <!-- CTA -->
+    <div class="blog-cta">
+      <div class="blog-cta-inner">
+        <div>
+          <h3>Vous avez un projet ?</h3>
+          <p>Faites une demande de devis ou prenez RDV en un clic. C'est rapide et 100% gratuit !</p>
+        </div>
+        <a href="/#contact" class="btn-cta">Nous contacter →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>© 2025 <a href="/" style="color:var(--green)">La 10 Agence</a> — Agence de communication visuelle Paris</p>
+    <nav class="footer-links" aria-label="Liens pied de page">
+      <a href="/">Accueil</a>
+      <a href="/projets.html">Projets</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/#contact">Contact</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </nav>
+  </footer>
+
+  <script>
+    function filterBlog(btn, cat) {
+      // Update buttons
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed','false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed','true');
+
+      // Show/hide articles
+      document.querySelectorAll('.article-card, .article-featured').forEach(a => {
+        if (cat === 'all' || a.dataset.cat === cat) {
+          a.classList.remove('hidden');
+          // Animate in
+          a.style.opacity = '0';
+          a.style.transform = 'translateY(12px)';
+          requestAnimationFrame(() => {
+            a.style.transition = 'opacity .3s ease, transform .3s ease';
+            a.style.opacity = '1';
+            a.style.transform = 'translateY(0)';
+          });
+        } else {
+          a.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
