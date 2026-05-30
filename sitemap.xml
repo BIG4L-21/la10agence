@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://la10agence-1nrn.vercel.app/</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://la10agence-1nrn.vercel.app/og-image.jpg</image:loc>
+      <image:title>La 10 Agence — Agence de communication visuelle Paris</image:title>
+      <image:caption>Agence de communication visuelle à Paris spécialisée en branding et marketing digital</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Page Projets -->
+  <url>
+    <loc>https://la10agence-1nrn.vercel.app/projets.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Page Blog -->
+  <url>
+    <loc>https://la10agence-1nrn.vercel.app/blog.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 1 -->
+  <url>
+    <loc>https://la10agence-1nrn.vercel.app/blog/pourquoi-branding-essentiel-pme.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article 2 -->
+  <url>
+    <loc>https://la10agence-1nrn.vercel.app/blog/tendances-marketing-digital-2025.html</loc>
+    <lastmod>2025-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article 3 -->
+  <url>
+    <loc>https://la10agence-1nrn.vercel.app/blog/choisir-agence-communication-paris.html</loc>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,40 @@
+# robots.txt — La 10 Agence
+# https://la10agence-1nrn.vercel.app
+
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /projets.html
+Allow: /blog.html
+Allow: /sitemap.xml
+
+Disallow: /admin.html
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Allow Google bot specifically
+User-agent: Googlebot
+Allow: /
+Disallow: /admin.html
+Disallow: /api/
+Crawl-delay: 1
+
+# Allow Bing bot
+User-agent: Bingbot
+Allow: /
+Disallow: /admin.html
+Crawl-delay: 2
+
+# Slow down aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://la10agence-1nrn.vercel.app/sitemap.xml
